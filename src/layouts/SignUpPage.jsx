@@ -1,10 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, {useContext, useState} from "react";
 import {ThemeContext} from "../Context/ThemeContext";
 import './styles.css'
 
 
 const SignUpPage = () => {
-    const { theme } = useContext(ThemeContext);
+    const {theme} = useContext(ThemeContext);
     const [formData, setFormData] = useState({
         name: "",
         username: "",
@@ -15,7 +15,7 @@ const SignUpPage = () => {
     });
 
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        setFormData({...formData, [e.target.name]: e.target.value});
     };
 
     const handleSubmit = (e) => {

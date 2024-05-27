@@ -9,13 +9,13 @@ import SignUpPage from "./layouts/SignUpPage";
 function App() {
     return (
         <ThemeProvider>
-                <div className="App">
-                    <Header/>
-                    <Routes>
-                        <Route path="/login" element={<SignInPage/>}/>
-                        <Route path="/register" element={<SignUpPage/>}/>
-                    </Routes>
-                </div>
+            <div className="App">
+                <Header/>
+                <Routes>
+                    <Route path="/login" element={<SignInPage/>}/>
+                    <Route path="/register" element={<SignUpPage/>}/>
+                </Routes>
+            </div>
         </ThemeProvider>
     );
 }

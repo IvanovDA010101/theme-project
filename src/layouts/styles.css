@@ -6,13 +6,14 @@
 
 }
 
-.light{
+.light {
     background-color: #f2f2f2; /* Цвет фона страницы */
 }
 
-.dark{
+.dark {
     background-color: rgba(40, 36, 36, 0.91); /* Цвет фона страницы */
 }
+
 .form-container {
     background-color: #fff;
     padding: 30px;

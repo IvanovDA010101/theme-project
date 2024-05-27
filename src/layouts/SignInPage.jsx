@@ -1,16 +1,16 @@
-import React, { useState, useContext } from "react";
-import { ThemeContext } from "../Context/ThemeContext";
+import React, {useContext, useState} from "react";
+import {ThemeContext} from "../Context/ThemeContext";
 import './styles.css'; // Предполагается, что файл со стилями правильно подключен
 
 const SignInPage = () => {
-    const { theme } = useContext(ThemeContext);
+    const {theme} = useContext(ThemeContext);
     const [formData, setFormData] = useState({
         email: "",
         password: "",
     });
 
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        setFormData({...formData, [e.target.name]: e.target.value});
     };
 
     const handleSubmit = (e) => {
